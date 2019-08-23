@@ -44,6 +44,20 @@ resp_menores = serie_ciudades < 6000
 
 resp_filtro = serie_ciudades[resp_menores]
 
+CSV_PATH = "./titanic.csv"
+df = pd.read_csv(CSV_PATH, 
+                 nrows=5, 
+                 index_col = 'PassengerId',
+                 usecols = ['PassengerId','Survived','Name'])
+
+
+
+
+
+
+
+
+
 
 
 
